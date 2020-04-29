@@ -30,6 +30,7 @@ class Owner
   end
   
   def cats 
+    Cat.collect{|cat| self.name == cat.name}
   end 
 
 end
